@@ -1,0 +1,735 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-background {
+    background-image: url("images/Rectangle\ 1.png");
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 85%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+}
+
+.background-image {
+    background-image: url("images/Layer\ 1.png");
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 85%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.main-header-nav {
+    padding: 20px;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0 60px 0 0;
+}
+
+.navbar-brand {
+    max-width: 50%;
+}
+
+.navbar-brand img {
+    max-width: 50%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: greenyellow;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+    color: yellow;
+}
+
+.navbar-toggler {
+    border-radius: unset;
+}
+
+.navbar .navbar-toggler {
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-nav .fas.fa-search {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.custom-content {
+    max-width: 600px;
+}
+
+.custom-text {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #dbd7cf;
+}
+
+.custom-heading {
+    font-size: 44px;
+    color: #ffffff;
+    margin: 0 0 30px;
+}
+
+.custom-button {
+    border-radius: 2px;
+    background-color: #dbd7cf;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+
+.custom-button:hover {
+    background-color: unset;
+    border-color: #0a58ca;
+    border-radius: 0;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.container.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.card {
+    border: none;
+    max-width: 200px;
+}
+
+.card-text {
+    color: #423d3f;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+
+    .header-background,
+    .background-image {
+        height: 500px;
+    }
+
+    .custom-content {
+        max-width: none;
+    }
+
+    .custom-text {
+        font-size: 12px;
+        line-height: unset;
+    }
+
+    .custom-heading {
+        font-size: 24px;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        z-index: 100;
+    }
+
+    .navbar-nav {
+        background-color: #778899;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header-background,
+    .background-image {
+        height: 600px;
+    }
+
+    .custom-content {
+        max-width: 380px;
+    }
+
+    .custom-text {
+        font-size: 14px;
+    }
+
+    .custom-heading {
+        font-size: 28px;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+.laser-cards {
+    padding: 50px 0;
+}
+
+.laser-cards,
+.card {
+    background-color: #f7f6f4;
+}
+
+.laser-cards .heading {
+    margin: 0 0 50px;
+    font-size: 38px;
+}
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    min-height: 40px;
+}
+
+
+.card-heading::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    background: black;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #f7f6f4;
+    border-radius: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+    top: 20%;
+}
+
+.laser-course-options {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+    .card-heading::before {
+        display: none;
+    }
+
+    .laser-school-section .heading {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .laser-school-section .card-heading {
+        min-height: 30px;
+    }
+
+    .laser-course-options {
+        text-align: center;
+    }
+
+    .laser-course-options .card {
+        max-width: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .laser-cards {
+        padding: 20px 0;
+    }
+
+    .laser-school-section .card-heading {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .laser-school-section .heading {
+        font-size: 28px;
+    }
+
+    .laser-course-options .card-text {
+        font-size: 14px;
+        max-width: none;
+    }
+}
+
+.laser-background {
+    background-color: #f7f6f4;
+}
+
+.background-wrapper {
+    background-image: url("images/BG Diagonal copy 3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+    color: #fff;
+    position: relative;
+
+}
+
+.background-wrapper .laser-operation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.laser-operation .section-heading {
+    max-width: 285px;
+    margin: 70px 0 0;
+}
+
+.laser-operation .section-description {
+    margin: 40px 0 0;
+}
+
+.laser-operation .custom-button {
+    margin-top: 15px;
+    margin: 15px 0 0;
+    font-size: 14px;
+}
+
+.section-description {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.opportunity-text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.advisor-text {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+@media (max-width: 767px) {
+    .background-wrapper {
+        height: 900px;
+    }
+
+    .laser-treatment {
+        margin: 30px 0 0;
+    }
+
+    .laser-operation .section-heading {
+        max-width: none;
+    }
+
+    .laser-operation .section-description {
+        max-width: none;
+        margin: 20px 0 0;
+    }
+
+    .laser-operation .section-heading {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .background-wrapper {
+        height: 700px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .laser-operation .visual-section img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: contain;
+
+    }
+
+
+}
+
+
+
+
+.business-background {
+    padding: 40px 0;
+    background-color: #f7f6f4;
+}
+
+.business-section {
+    margin: 0 0 80px;
+}
+
+.contact-card p {
+    font-size: 12px;
+}
+
+.business-section .contact-card {
+    line-height: 28px;
+}
+
+.business-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.business-address {
+
+    max-width: 160px;
+    margin: 0;
+}
+
+.business-phone {
+    margin: 0 0 50px;
+}
+
+.days-of-operation {
+    margin: 0;
+}
+
+.hz-line {
+    height: 1px;
+    background-color: #ffffff;
+    border: 1px solid #dbd7cf;
+}
+
+
+.business-section h5,
+.copyright-section h5 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.copyright-section {
+    margin: 80px 0 0;
+}
+
+.copyright-info a {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.copyright-info a img {
+    max-width: 50%;
+}
+
+.copyright-info p {
+    font-size: 12px;
+    max-width: 250px;
+    color: #423d3f;
+}
+
+.footer-nav ul li a {
+    font-size: 12px;
+    margin: 0 0 10px;
+    display: block;
+    color: #423d3f;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    color: crimson;
+
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.image-container a:nth-child(2) {
+    margin: 0 0 0 15px;
+}
+
+
+.contact-card,
+.newsletter {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.newsletter .input-group .form-control {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #dbd7cf;
+    padding: 10px 70px 10px 20px;
+}
+
+.newsletter .input-group .form-control::placeholder {
+    color: #423d3f;
+    font-size: 12px;
+}
+
+.input-group .input-group-append {
+    position: relative;
+}
+
+.input-group .input-group-append .arrow-button {
+    position: absolute;
+    border: none;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title-category {
+    font-size: 14px;
+    color: #423d3f;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .business-background {
+        padding: 20px 0;
+    }
+
+    .business-background .business-section {
+        margin: 0 0 40px;
+    }
+
+    .business-section .map-image {
+        margin-bottom: 20px;
+        margin: 0 0 20px;
+    }
+
+    .business-section .business-address {
+        max-width: none;
+    }
+
+    .business-section .contact-card {
+        text-align: center;
+        max-width: none;
+    }
+
+    .business-section .business-phone {
+        margin: 0 0 25px;
+    }
+
+    .business-section .image-container {
+        justify-content: center;
+    }
+
+    .business-description {
+        margin: 0 0 20px;
+    }
+
+    .business-background .copyright-section {
+        margin: 40px 0 0;
+    }
+
+    .copyright-info a img {
+        max-width: 40%;
+    }
+
+    .copyright-info p {
+        max-width: none;
+    }
+
+    .newsletter {
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .business-section .contact-card {
+        max-width: none;
+    }
+
+    .business-section .map-image {
+        margin: 0 0 30px;
+    }
+
+    .business-background .business-section {
+        margin: 0 0 50px;
+    }
+
+    .business-background .copyright-section {
+        margin: 50px 0 0;
+    }
+}
+
+
+
+
+.header-hex,
+.main-hex,
+.footer-hex {
+    position: relative;
+}
+
+.header-hex img,
+.main-hex img,
+.footer-hex img {
+    position: absolute;
+}
+
+
+.header-hex img:nth-child(1) {
+    right: 170px;
+    top: -536px;
+    height: 40px;
+    width: 35px;
+
+}
+
+.header-hex img:nth-child(2) {
+    right: 100px;
+    top: -480px;
+    height: 65px;
+    width: 65px;
+}
+
+.header-hex img:nth-child(3) {
+    right: 100px;
+    top: -239px;
+    height: 200px;
+    width: 185px;
+}
+
+.main-hex img:nth-child(1) {
+    left: 20px;
+    bottom: 110px;
+    height: 40px;
+    width: 35px;
+}
+
+.main-hex img:nth-child(2) {
+    left: 63px;
+    bottom: 10px;
+    height: 65px;
+    width: 60px;
+}
+
+.main-hex img:nth-child(3) {
+    height: 150px;
+    width: 130px;
+    left: -70px;
+    bottom: -230px;
+    z-index: 1;
+}
+
+
+.footer-hex img:nth-child(1) {
+    top: -275px;
+    right: 185px;
+    height: 40px;
+    width: 35px;
+}
+
+.footer-hex img:nth-child(2) {
+    top: -230px;
+    right: 125px;
+    height: 65px;
+    width: 60px;
+}
+
+.footer-hex img:nth-child(3) {
+    top: -140px;
+    right: 200px;
+    height: 150px;
+    width: 130px;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .header-hex img:nth-child(1) {
+        right: 102px;
+        top: -448px;
+        height: 40px;
+        width: 35px;
+    }
+
+    .header-hex img:nth-child(2) {
+        right: 35px;
+        top: -230px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .header-hex img:nth-child(3) {
+        right: 25px;
+        top: -115px;
+        height: 135px;
+        width: 135px;
+    }
+
+    .main-hex img:nth-child(1) {
+        left: 30px;
+        bottom: -50px;
+        height: 40px;
+        width: 35px;
+    }
+
+    .main-hex img:nth-child(2) {
+        left: 150px;
+        bottom: -40px;
+        height: 65px;
+        width: 60px;
+    }
+
+    .main-hex img:nth-child(3) {
+        height: 70px;
+        width: 50px;
+        left: 85px;
+        bottom: -130px;
+        z-index: 1;
+    }
+
+    .footer-hex img:nth-child(1) {
+        top: -175px;
+        right: 245px;
+        height: 40px;
+        width: 35px;
+    }
+
+
+    .footer-hex img:nth-child(2) {
+        top: -60px;
+        right: 240px;
+        height: 65px;
+        width: 60px;
+    }
+
+    .footer-hex img:nth-child(3) {
+        top: -140px;
+        right: 70px;
+        height: 150px;
+        width: 130px;
+        z-index: 1;
+    }
+}
